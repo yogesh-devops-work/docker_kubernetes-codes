@@ -1,0 +1,11 @@
+apiVersion: v1
+Kind: Pod
+metadata:
+  name: ngnix
+  label:
+    app: ngnix
+    tier: frontend
+spec:
+  containers:
+    - name: ngnix
+      image: nginx
